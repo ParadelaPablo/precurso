@@ -19,7 +19,7 @@ public class QuotaCalculator {
         scanner.close();
 
         //Make a decision on the path to take - Output
-        if(sales >= quota){
+        if(sales >=     quota){
             System.out.println("Congratulations");
         }
         else{
