@@ -4,63 +4,48 @@ import java.util.Scanner;
 
 public class Rectangle {
 
-    Scanner scanner = new Scanner(System.in);
-    public class Rectangle {
+    private double length;
+    private double width;
 
-        private double length;
-        private double width;
+    // Constructor por defecto
+    public Rectangle() {
+        this.length = 0;
+        this.width = 0;
+    }
 
-        public Rectangle(){
+    // Constructor con parámetros
+    public Rectangle(double length, double width) {
+        setLength(length);
+        setWidth(width);
+    }
 
-            length = 0;
-            width = 0;
-        }
-        public Rectangle(double length, double width){
-            setLength(length);
-            setWidth(width);
-        }
+    // Método getter para length
+    public double getLength() {
+        return length;
+    }
 
-       public double getLength {
-            return length;
+    // Método setter para length
+    public void setLength(double length) {
+        this.length = length;
+    }
 
+    // Método getter para width
+    public double getWidth() {
+        return width;
+    }
 
-        }
-       public void setLength(length) {
-            this.length = length;
+    // Método setter para width
+    public void setWidth(double width) {
+        this.width = width;
+    }
 
+    // Método para calcular el área
+    public double calculateArea() {
+        return length * width;
+    }
 
-        }
-
-            /*           System.out.println("Ingresar el length");
-
-            double length = scanner.nextDouble();
-                  System.out.println("Ingresar el width");
-            double length = scanner.nextDouble();
-*/
-
-       public double getWidth{
-            return getWidth;
-
-
-        }
-
-       public void setWidth (width) {
-            this.width = width;
-
-        }
-
-       double calculateArea(){
-           return (2*length) + (2*width);
-
-
-        }
-
-       double calculatePerimeter(){
-           return length * width;
-
-
-
-        }
-
+    // Método para calcular el perímetro
+    public double calculatePerimeter() {
+        return 2 * (length + width);
     }
 }
