@@ -27,7 +27,7 @@ public class LetterSearch {
            }
 
        }
-        if(letterFound){
+       if(letterFound){
             System.out.println("El texto contiene la letra a");
         }
         else{
