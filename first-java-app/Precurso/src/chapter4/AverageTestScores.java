@@ -14,7 +14,7 @@ public class AverageTestScores {
       //ingresar los números de los test de cada alumno
       for(int i=0; i<students; i++){
         for(int j=0; j<tests; j++) {
-            System.out.println("Ingresar el resultado de la prueba");
+            System.out.println("Ingresar el resultado de la prueba " + (j+1));
 
             total = total + scanner.nextInt();
 
